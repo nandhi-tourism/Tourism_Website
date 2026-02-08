@@ -1,0 +1,31 @@
+/* ===== APP STYLES ===== */
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1a3c5e, #0a2a4a);
+    color: white;
+    text-align: center;
+}
+
+.cta-content .section-title {
+    color: white;
+}
+
+.cta-content .section-title::after {
+    background-color: #4a9ae9;
+}
+
+.cta-content .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+}

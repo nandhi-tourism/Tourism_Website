@@ -1,0 +1,84 @@
+/* ===== PACKAGE CARD ===== */
+.package-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.package-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.package-card:hover .package-image img {
+    transform: scale(1.05);
+}
+
+.package-price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4a9ae9;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.package-content {
+    padding: 25px;
+}
+
+.package-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.package-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.package-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.package-details span {
+    display: flex;
+    align-items: center;
+}
+
+.package-details i {
+    margin-right: 5px;
+    color: #4a9ae9;
+}
+
+/* Media Queries for Package Card */
+@media (max-width: 480px) {
+    .package-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
