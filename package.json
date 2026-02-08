@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "description": "Professional tourism website for Nandi Tourism - Reliable, affordable, and comfortable travel services",
-  "keywords": ["tourism", "travel", "react", "website", "business"],
+  "keywords": [
+    "tourism",
+    "travel",
+    "react",
+    "website",
+    "business"
+  ],
   "author": "Your Name <your-email@example.com>",
   "license": "MIT",
   "homepage": "https://nanditourism.com",
@@ -24,6 +30,7 @@
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.0.0",
     "gh-pages": "^5.0.0",
+    "sharp": "^0.34.5",
     "vite": "^4.4.0"
   },
   "engines": {
