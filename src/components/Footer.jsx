@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Style/Footer.css';
 import { VITE_WHATSAPP_NUMBER,VITE_FACEBOOK,VITE_GMAIL,VITE_INSTAGRAM,VITE_LINKEDIN,VITE_TWITTER,VITE_OFFICE_ADDRESS} from '../pages/script/socialMediaAcc';
+import logo from '../assets/photos/Logo.webp'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -29,9 +30,9 @@ const Footer = () => {
                     <div className="footer-column">
                         <div className="footer-logo">
                             <div className="logo-icon">
-                                <i className="fas fa-mountain"></i>
+                                <img src={logo} alt="Nandi Tourism" />
                             </div>
-                            <h2 className="logo-text">Nandi Tourism</h2>
+                            <h2 style={{marginLeft:"10px"}} className="logo-text">Nandi Tourism</h2>
                         </div>
                         <p className="footer-description">
                             Providing reliable, affordable, and comfortable travel and tour services for over a decade.
@@ -63,6 +64,7 @@ const Footer = () => {
                                 </a>
                             ))}
                         </div>
+                                <a href="https://nuthan-444.github.io/HTML-CSS/Contact-Info/"><button className='contact-website-developer'>Contact Website Developer</button></a>
                     </div>
                     
                     {/* Quick Links */}

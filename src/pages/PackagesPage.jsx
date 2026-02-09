@@ -16,7 +16,7 @@ const PackagePage = () => {
         setTimeout(() => {
             setPackages(AllPackages);
             setLoading(false);
-        }, 1000);
+        }, 500);
     }, []);
 
     useEffect(() => {
@@ -109,7 +109,7 @@ const PackagePage = () => {
                         <h2>Need Help Choosing?</h2>
                         <p>Chat with our travel experts on WhatsApp for personalized recommendations.</p>
                         <a 
-                            href="https://wa.me/1234567890?text=Hello%2C%20I%20need%20help%20choosing%20a%20package."
+                            href="https://wa.me/7829974320?text=Hello%2C%20I%20need%20help%20choosing%20a%20package."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="whatsapp-button"

@@ -141,6 +141,22 @@
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
 }
+.contact-website-developer{
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    border-radius: 30px;
+    border: rgba(255, 255, 255, 0.452) 1px solid;
+    color: rgba(255, 255, 255, 0.993);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-website-developer:hover {
+    background-color: #4a9ae9;
+    border: none;
+}
 
 /* Media Queries for Footer */
 @media (min-width: 768px) {

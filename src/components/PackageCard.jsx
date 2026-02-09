@@ -16,7 +16,7 @@ const PackageCard = ({ package: pkg }) => {
         <div className="package-card">
             <div className="package-image">
                 <img src={pkg.image} alt={pkg.title} loading="lazy" />
-                <div className="package-price">${pkg.price}</div>
+                <div className="package-price">₹{pkg.price}</div>
             </div>
             <div className="package-content">
                 <h3 className="package-title">{pkg.title}</h3>
