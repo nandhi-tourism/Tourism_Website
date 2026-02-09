@@ -17,7 +17,7 @@ export const AllPackages = [
                     location: 'Dandeli, Gokarna, Honnavara, Murdeshwar',
                     image: honnawara,
                     category: 'adventure',
-                    extra: "Scuba diving, Fire camp, Food",
+                    extra: "Scuba diving, Fire camp, Food.",
                 },
                 {
                 
@@ -31,7 +31,7 @@ export const AllPackages = [
                     location: 'Goa, Murdeshwar',
                     image: shriMurudeshwaraBeach,
                     category: 'beach',
-                    extra: "Scuba diving, Fire camp, Food",
+                    extra: "Scuba diving, Fire camp, Food.",
 
                 },
                 {
@@ -45,7 +45,7 @@ export const AllPackages = [
                     location: 'Mysore (Zoo, GRS Fantasy Park, Chamundeshwari Hill, Rangarajan Aqua Park)',
                     image: underwater,
                     category: 'family',
-                    extra: "Fire camp",
+                    extra: "Fire camp.",
                 },
             ];
 

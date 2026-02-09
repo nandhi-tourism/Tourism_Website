@@ -21,7 +21,8 @@ const PackageCard = ({ package: pkg }) => {
             <div className="package-content">
                 <h3 className="package-title">{pkg.title}</h3>
                 <p className="package-description">{pkg.description}</p>
-                <p className='package-description' style={{fontWeight:"bold"}}>{pkg.food}</p>
+                <p className='package-description' style={{fontWeight:"bold"}}>Food:{pkg.food}</p>
+                <p className='package-description' style={{fontWeight:"bold"}}>Extra:{pkg.extra}</p>
                 <div className="package-details">
                     <span><i className="fas fa-calendar"></i> {pkg.duration}</span><br />
                     <span><i className="fas fa-user-friends"></i> {pkg.groupSize}</span><br />
