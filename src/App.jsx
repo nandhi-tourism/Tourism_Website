@@ -7,9 +7,14 @@ import PackagesPage from './pages/PackagesPage';
 import ContactPage from './pages/ContactPage';
 import './App.css';
 
+
+
 function App() {
     return (
-        <Router>
+        <Router future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}>
             <div className="App">
                 <Header />
                 <Routes>

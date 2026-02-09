@@ -58,8 +58,9 @@
 }
 
 .package-details {
-    display: flex;
-    justify-content: space-between;
+    width: 500px;
+    /* display: flex;
+    justify-content: space-between; */
     margin-bottom: 25px;
     color: #777;
     font-size: 0.9rem;
@@ -78,6 +79,7 @@
 /* Media Queries for Package Card */
 @media (max-width: 480px) {
     .package-details {
+    width: 300px;
         flex-direction: column;
         gap: 10px;
     }

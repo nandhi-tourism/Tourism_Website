@@ -79,7 +79,9 @@
 .packages-section {
     padding: 80px 0;
     background-color: #f9f9f9;
+    padding: 0px 20px;
 }
+
 
 .packages-grid {
     display: grid;

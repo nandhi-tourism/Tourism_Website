@@ -54,9 +54,9 @@ const PackagePage = () => {
                     <div className="filter-container">
                         <h3 className="filter-title">Filter by Category:</h3>
                         <div className="filter-buttons">
-                            {filterOptions.map(option => (
+                            {filterOptions.map((option,idx) => (
                                 <button
-                                    key={option.value}
+                                    key={idx}
                                     className={`filter-button ${filter === option.value ? 'active' : ''}`}
                                     onClick={() => setFilter(option.value)}
                                 >
@@ -70,7 +70,7 @@ const PackagePage = () => {
 
             {/* Packages Grid */}
             <section className="packages-section">
-                <div className="container">
+                <div className="package-container">
                     {loading ? (
                         <LoadingSpinner />
                     ) : (

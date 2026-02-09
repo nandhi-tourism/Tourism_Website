@@ -1,76 +1,66 @@
+import beachPhoto from '../../assets/photos/beach photos.webp'
+import shriMurudeshwaraBeach from '../../assets/photos/shri-murdeshwara-beach.webp'
+import honnawara from '../../assets/photos/honnawara.webp'
+import underwater from '../../assets/photos/underwater-tunnel.webp'
+
+
+
 export const AllPackages = [
                 {
                     id: 1,
-                    title: 'Mountain Adventure Expedition',
-                    description: '7-day guided trekking adventure through scenic mountain trails with experienced guides and comfortable camping facilities.',
-                    price: 1299,
-                    duration: '7 Days',
-                    groupSize: '12 People',
-                    location: 'Nepal',
-                    image: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80',
-                    category: 'adventure'
+                    title: 'Dandeli–Gokarna Adventure Trip',
+                    description: 'A 3-day adventure trip covering Dandeli, Gokarna, Honnavara, and Murdeshwar with thrilling activities, scenic views, and group experiences.',
+                    food:"Meals are included as part of the package.",
+                    price: 6499,
+                    duration: '3 Days',
+                    groupSize: '49 People',
+                    location: 'Dandeli, Gokarna, Honnavara, Murdeshwar',
+                    image: honnawara,
+                    category: 'adventure',
+                    extra: "Scuba diving, Fire camp, Food",
                 },
                 {
+                
                     id: 2,
-                    title: 'Cultural Heritage Tour',
-                    description: '5-day immersive cultural experience exploring ancient temples, local traditions, and authentic culinary delights.',
-                    price: 899,
-                    duration: '5 Days',
-                    groupSize: '15 People',
-                    location: 'Cambodia',
-                    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
-                    category: 'cultural'
+                    title: 'Goa & Murdeshwar Beach Escape',
+                    description: 'A refreshing 2-day beach getaway covering the vibrant beaches of Goa and the serene coastal beauty of Murdeshwar. Ideal for small and large groups.',
+                    food:"Meals are included as part of the package.",
+                    price: 5299,
+                    duration: '2 Days',
+                    groupSize: '16–49 People',
+                    location: 'Goa, Murdeshwar',
+                    image: shriMurudeshwaraBeach,
+                    category: 'beach',
+                    extra: "Scuba diving, Fire camp, Food",
+
                 },
                 {
                     id: 3,
-                    title: 'Tropical Beach Paradise',
-                    description: '8-day luxury beach getaway with water sports, island hopping, and relaxation at premium seaside resorts.',
-                    price: 1599,
-                    duration: '8 Days',
-                    groupSize: '10 People',
-                    location: 'Thailand',
-                    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80',
-                    category: 'beach'
+                    title: 'Mysore Sightseeing & Leisure Trip',
+                    description: 'A relaxing 2-day Mysore trip covering top attractions like Mysore Zoo, GRS Fantasy Park, and Chamundeshwari Hill. Ideal for group travel.',
+                    food:"Meals are included as part of the package.",
+                    price: 4999,
+                    duration: '2 Days',
+                    groupSize: '16–49 People',
+                    location: 'Mysore (Zoo, GRS Fantasy Park, Chamundeshwari Hill, Rangarajan Aqua Park)',
+                    image: underwater,
+                    category: 'family',
+                    extra: "Fire camp",
                 },
-                {
-                    id: 4,
-                    title: 'Safari Wildlife Adventure',
-                    description: '6-day safari experience in the heart of Africa with expert guides, luxury lodges, and close encounters with wildlife.',
-                    price: 2199,
-                    duration: '6 Days',
-                    groupSize: '8 People',
-                    location: 'Kenya',
-                    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                    category: 'adventure'
-                },
-                {
-                    id: 5,
-                    title: 'European Heritage Tour',
-                    description: '10-day journey through historic European cities with guided tours, fine dining, and luxury accommodations.',
-                    price: 2899,
-                    duration: '10 Days',
-                    groupSize: '15 People',
-                    location: 'Europe',
-                    image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                    category: 'cultural'
-                },
-                {
-                    id: 6,
-                    title: 'Island Hopping Adventure',
-                    description: '7-day island-hopping tour exploring pristine beaches, coral reefs, and tropical landscapes.',
-                    price: 1799,
-                    duration: '7 Days',
-                    groupSize: '12 People',
-                    location: 'Philippines',
-                    image: 'https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-                    category: 'beach'
-                }
             ];
 
 
+const capitalize = (str) => {
+  if (!str) return '';
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+
 export const filterOptions = [
-        { value: 'all', label: 'All Packages' },
-        { value: 'adventure', label: 'Adventure' },
-        { value: 'cultural', label: 'Cultural' },
-        { value: 'beach', label: 'Beach' },
+  { value: 'all', label: 'All Packages' },
+  ...[...new Set(AllPackages.map(pack => pack.category))]
+    .map(cat => ({
+      value: cat,
+      label: capitalize(cat)
+    }))
 ];

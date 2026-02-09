@@ -21,10 +21,11 @@ const PackageCard = ({ package: pkg }) => {
             <div className="package-content">
                 <h3 className="package-title">{pkg.title}</h3>
                 <p className="package-description">{pkg.description}</p>
+                <p className='package-description' style={{fontWeight:"bold"}}>{pkg.food}</p>
                 <div className="package-details">
-                    <span><i className="fas fa-calendar"></i> {pkg.duration}</span>
-                    <span><i className="fas fa-user-friends"></i> {pkg.groupSize}</span>
-                    <span><i className="fas fa-map-marker-alt"></i> {pkg.location}</span>
+                    <span><i className="fas fa-calendar"></i> {pkg.duration}</span><br />
+                    <span><i className="fas fa-user-friends"></i> {pkg.groupSize}</span><br />
+                    <span><i className="fas fa-map-marker-alt"></i> {pkg.location}</span><br />
                 </div>
                 <button 
                     onClick={handleBookNow} 
