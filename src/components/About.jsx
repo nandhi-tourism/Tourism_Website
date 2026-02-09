@@ -5,11 +5,11 @@ const About = () => {
     return (
         <section className="about" id="about">
             <div className="container">
-                <h2 className="section-title">About Nandi Tourism</h2>
+                <h2 className="section-title">About Nandhi Tourism</h2>
                 <div className="about-content">
                     <div className="about-text">
                         <p>
-                            Founded with a passion for exploration, Nandi Tourism has been providing 
+                            Founded with a passion for exploration, Nandhi Tourism has been providing 
                             exceptional travel and tour services for over a decade. We specialize in 
                             crafting unforgettable journeys that combine comfort, adventure, and cultural immersion.
                         </p>
@@ -20,7 +20,7 @@ const About = () => {
                             our team handles every detail with professionalism and care.
                         </p>
                         <p>
-                            At Nandi Tourism, we believe travel should be transformative, not stressful. 
+                            At Nandhi Tourism, we believe travel should be transformative, not stressful. 
                             That's why we focus on seamless logistics, knowledgeable guides, and personalized 
                             service to create worry-free travel experiences for all our clients.
                         </p>
@@ -29,7 +29,7 @@ const About = () => {
                         <div className="image-frame">
                             <img 
                                 src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" 
-                                alt="Nandi Tourism Team"
+                                alt="Nandhi Tourism Team"
                                 loading="lazy"
                             />
                         </div>

@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
     return (
         <section className="why-us" id="why-us">
             <div className="container">
-                <h2 className="section-title">Why Choose Nandi Tourism</h2>
+                <h2 className="section-title">Why Choose Nandhi Tourism</h2>
                 <p className="section-subtitle">
                     We're committed to delivering exceptional travel experiences with these key advantages
                 </p>

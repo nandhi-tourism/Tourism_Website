@@ -50,7 +50,7 @@ const Header = () => {
                             <div className="logo-icon">
                                 <img src={logo} alt="" />
                             </div>
-                        <h1 className="logo-text">Nandi Tourism</h1>
+                        <h1 className="logo-text">Nandhi Tourism</h1>
                     </Link>
 
                     {/* Desktop Navigation */}

@@ -19,7 +19,7 @@ const Hero = () => {
                     <div className="hero-content" ref={heroContentRef}>
                         <h2 className="hero-title">What are you waiting for?</h2>
                         <p className="hero-subtitle">
-                            Discover breathtaking destinations with Nandi Tourism. We provide reliable, 
+                            Discover breathtaking destinations with Nandhi Tourism. We provide reliable, 
                             affordable, and comfortable travel experiences that create lifelong memories.
                         </p>
                         <Link to="/packages" className="cta-button">See Packages</Link>

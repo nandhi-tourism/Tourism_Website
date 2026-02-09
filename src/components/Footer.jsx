@@ -30,9 +30,9 @@ const Footer = () => {
                     <div className="footer-column">
                         <div className="footer-logo">
                             <div className="logo-icon">
-                                <img src={logo} alt="Nandi Tourism" />
+                                <img src={logo} alt="Nandhi Tourism" />
                             </div>
-                            <h2 style={{marginLeft:"10px"}} className="logo-text">Nandi Tourism</h2>
+                            <h2 style={{marginLeft:"10px"}} className="logo-text">Nandhi Tourism</h2>
                         </div>
                         <p className="footer-description">
                             Providing reliable, affordable, and comfortable travel and tour services for over a decade.
@@ -93,7 +93,7 @@ const Footer = () => {
                 
                 {/* Copyright */}
                 <div className="footer-bottom">
-                    <p>&copy; {currentYear} Nandi Tourism. All rights reserved.</p>
+                    <p>&copy; {currentYear} Nandhi Tourism. All rights reserved.</p>
                 </div>
             </div>
         </footer>
