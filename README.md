@@ -1,1 +1,1 @@
-<a href="https://nandhi-tourism.vercel.app/"><h2>click to visit website</h2></a>
+<h2><a href="https://nandhi-tourism.vercel.app/">click to visit website</a></h2>
